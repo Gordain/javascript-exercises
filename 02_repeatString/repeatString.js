@@ -1,6 +1,9 @@
 const repeatString = function(string, num) {
     let text = string;
     let returnText = text;
+    if(num == 0){
+        return "";
+    }
     for(i = 0; i < num-1; i++){             //iterate through num arguement -1 times, as
         returnText = returnText + text;     //first is already assigned
     };
