@@ -2,7 +2,8 @@ const reverseString = function(input) {
     let wordToBeReversed = input;
     let stringArray = wordToBeReversed.split("");
     stringArray.reverse();
-    let reversedWord = stringArray.toString();
+    let reversedWordcommas = stringArray.toString();
+    let reversedWord = reversedWordcommas.replace(/,/g, '');
     return reversedWord
 };
 
