@@ -4,7 +4,7 @@ const removeFromArray = function(arrayArgs, ...removeArgs) {    //rest argument 
     console.log(itemsToRemove);
     for (let i = givenArray.length -1; i>=0; i--){          //as the length of the array changes from removed items need to loop backwards
         for(let j = 0; j < itemsToRemove.length; j++){
-            if(givenArray[i]==itemsToRemove[j]){
+            if(givenArray[i]===itemsToRemove[j]){
                 givenArray.splice(i,1);                 //nested loop to iterate through every possible given item to remove
             }
         }
