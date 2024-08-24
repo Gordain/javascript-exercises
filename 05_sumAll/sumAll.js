@@ -5,12 +5,12 @@ const sumAll = function(a, b) {
     if(firstNumber < 0 || secondNumber < 0 || !Number.isInteger(firstNumber) || !Number.isInteger(secondNumber)){
         return "ERROR";
     }else if(firstNumber > secondNumber){
-        for(let i = secondNumber; secondNumber <= firstNumber; i++){
+        for(let i = secondNumber; i <= firstNumber; i++){
             sumOfNumbers += i;
         }
         return sumOfNumbers;
     }else{
-        for(let i = firstNumber; firstNumber <= secondNumber; i++){
+        for(let i = firstNumber; i <= secondNumber; i++){
             sumOfNumbers += i;
         }
         return sumOfNumbers;
